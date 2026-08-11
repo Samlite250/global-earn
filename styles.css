@@ -988,7 +988,7 @@ input[type="range"].calc-slider::-webkit-slider-thumb:hover {
   position: relative;
   overflow: hidden;
   box-shadow: var(--shadow-lg);
-  box-sizing: border-border;
+  box-sizing: border-box;
   width: 100%;
   max-width: 100%;
 }
@@ -1035,6 +1035,17 @@ input[type="range"].calc-slider::-webkit-slider-thumb:hover {
   font-weight: 600;
   width: 100%;
   max-width: 100%;
+  box-sizing: border-box;
+}
+
+.cta-checklist div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  word-break: break-word;
+  max-width: 100%;
+  text-align: center;
 }
 
 .cta-form {
