@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html lang="rw" class="light">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-i18n="docTitle">Global Earn — Ganira n'abanyamahanga uhembwe ku isaha kuri MoMo</title>
+    <meta name="description" content="Global Earn ni urubuga rwa mbere ruguha 3,900 FRW Welcome Bonus ukimara kwiyandikisha, n'amahirwe yo guganira n'abanyamahanga ukahembwa 2,500 FRW buri saha kuri MoMo." data-i18n-meta="docDesc" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <!-- Header / Navbar -->
+    <header class="header">
+        <div class="container header-inner">
+            <a href="#" class="logo">
+                <span class="logo-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                    </svg>
+                </span>
+                <span class="logo-text">Global Earn</span>
+            </a>
+
+            <nav class="nav" aria-label="Main Navigation">
+                <a href="#calculator" class="nav-link" data-i18n="navCalc">Baraga Inyungu</a>
+                <a href="#uko-bikorwa" class="nav-link" data-i18n="navHow">Uko bikorwa</a>
+                <a href="#uburyo" class="nav-link" data-i18n="navWays">Serivisi Zose</a>
+                <a href="#inguzanyo" class="nav-link" data-i18n="navLoans">Inguzanyo</a>
+            </nav>
+
+            <div class="header-actions">
+                <!-- Language Switcher -->
+                <div class="lang-switcher">
+                    <button class="lang-btn" id="langBtn" aria-expanded="false" aria-label="Select Language">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="2" y1="12" x2="22" y2="12"></line>
+                            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                        </svg>
+                        <span id="currentLangLabel">Kinyarwanda</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                    <div class="lang-dropdown" id="langDropdown">
+                        <button class="lang-option active" data-lang="rw">
+                            <span class="flag">🇷🇼</span> Kinyarwanda
+                        </button>
+                        <button class="lang-option" data-lang="en">
+                            <span class="flag">🇬🇧</span> English
+                        </button>
+                        <button class="lang-option" data-lang="fr">
+                            <span class="flag">🇫🇷</span> Français
+                        </button>
+                    </div>
+                </div>
+
+                <a target="_blank" rel="noopener noreferrer" class="btn btn-primary" href="https://mulaearn.com/register.php?ref=Mami" data-i18n="navRegister">
+                    IYANDIKISHE
+                </a>
+
+                <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Mobile Menu">
+                    <svg id="menuIcon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="#calculator" class="nav-link mobile-link" data-i18n="navCalc">Baraga Inyungu</a>
+            <a href="#uko-bikorwa" class="nav-link mobile-link" data-i18n="navHow">Uko bikorwa</a>
+            <a href="#uburyo" class="nav-link mobile-link" data-i18n="navWays">Serivisi Zose</a>
+            <a href="#inguzanyo" class="nav-link mobile-link" data-i18n="navLoans">Inguzanyo</a>
+            <div class="mobile-lang">
+                <button class="lang-option active" data-lang="rw"><span class="flag">🇷🇼</span> RW</button>
+                <button class="lang-option" data-lang="en"><span class="flag">🇬🇧</span> EN</button>
+                <button class="lang-option" data-lang="fr"><span class="flag">🇫🇷</span> FR</button>
+            </div>
+            <a target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-full" style="margin-top: 8px;" href="https://mulaearn.com/register.php?ref=Mami" data-i18n="navRegister">
+                IYANDIKISHE
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-glow"></div>
+            <div class="container hero-grid">
+                <div class="animate-on-scroll">
+                    <span class="hero-badge">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                        </svg>
+                        Global Earn — Foreign Chat Opportunity
+                    </span>
+                    <h1 class="hero-title" data-i18n="heroTitle">Ganira n'abanyamahanga uhembwe 2,500 FRW buri saha kuri MoMo</h1>
+                    <p class="hero-desc" data-i18n="heroDesc">
+                        Global Earn niko urubuga rwa mbere ruguha 3,900 FRW Welcome Bonus instant ukimara gukora account, n'amahirwe yo guganira n'abantu baturuka mu bihugu bitandukanye (USA, Canada, UK, France, UAE) ukajya uhembwa 2,500 FRW buri saha kuri MTN MoMo cyangwa Airtel Money!
+                    </p>
+
+                    <div class="lang-pills">
+                        <span class="lang-pill">🇬🇧 English</span>
+                        <span class="lang-pill">🇫🇷 Français</span>
+                        <span class="lang-pill">🇹🇿 Kiswahili</span>
+                        <span class="lang-pill">🇷🇼 Kinyarwanda</span>
+                        <span class="lang-pill">🇦🇪 Arabic</span>
+                    </div>
+
+                    <div class="hero-buttons" style="margin-top: 24px;">
+                        <a target="_blank" rel="noopener noreferrer" class="btn btn-primary" href="https://mulaearn.com/register.php?ref=Mami">
+                            <span data-i18n="heroCta">TANGIRA GUGANIRA NONE →</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="arrow-icon">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </a>
+                        <a href="#calculator" class="btn btn-outline" data-i18n="heroLearnMore">Baraga Inyungu Zayo</a>
+                    </div>
+
+                    <div class="hero-stats">
+                        <div>
+                            <div class="stat-value">2,500 RWF</div>
+                            <div class="stat-label" data-i18n="statPerHour">Buri saha yo Chat</div>
+                        </div>
+                        <div>
+                            <div class="stat-value">3,900 RWF</div>
+                            <div class="stat-label" data-i18n="statWelcome">Welcome bonus</div>
+                        </div>
+                        <div>
+                            <div class="stat-value">Instant</div>
+                            <div class="stat-label" data-i18n="statPayout">MoMo Payout</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-visual animate-on-scroll">
+                    <div class="hero-img-wrapper">
+                        <img src="hero-smartphone.png" alt="Ganira n'abanyamahanga uhembwe kuri Global Earn" width="640" height="720" />
+                    </div>
+                    <div class="hero-floating-card">
+                        <div class="floating-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                            </svg>
+                        </div>
+                        <div class="floating-text">
+                            <p data-i18n="floatMainGoal">Foreign Chat Companion</p>
+                            <p data-i18n="floatSubGoal">Uhembwa 2,500 RWF buri saha</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Live Foreigners Profiles Section -->
+        <section class="container" style="margin-bottom: 70px;">
+            <div class="animate-on-scroll" style="text-align: center;">
+                <p class="section-label" data-i18n="liveLabel">ABANYAMAHANGA BATEGEREJE GUGANIRA NAWE</p>
+                <h2 class="section-title" data-i18n="liveTitle">Abakiriya bari online ubu (Live Active Companions)</h2>
+            </div>
+            <div class="profiles-grid animate-on-scroll">
+                <div class="profile-card">
+                    <div class="profile-avatar">🇺🇸</div>
+                    <div class="profile-info">
+                        <h4>Sarah M. (USA)</h4>
+                        <p><span class="status-online"></span>Online • English / French</p>
+                    </div>
+                </div>
+                <div class="profile-card">
+                    <div class="profile-avatar">🇨🇦</div>
+                    <div class="profile-info">
+                        <h4>David L. (Canada)</h4>
+                        <p><span class="status-online"></span>Online • English</p>
+                    </div>
+                </div>
+                <div class="profile-card">
+                    <div class="profile-avatar">🇬🇧</div>
+                    <div class="profile-info">
+                        <h4>Emma W. (UK)</h4>
+                        <p><span class="status-online"></span>Online • English / Kiswahili</p>
+                    </div>
+                </div>
+                <div class="profile-card">
+                    <div class="profile-avatar">🇦🇪</div>
+                    <div class="profile-info">
+                        <h4>Ahmed K. (UAE)</h4>
+                        <p><span class="status-online"></span>Online • Arabic / English</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Divider -->
+        <div class="section-divider"></div>
+
+        <!-- Interactive Chat Calculator Section -->
+        <section id="calculator" class="calc-section">
+            <div class="container">
+                <div class="calc-card animate-on-scroll">
+                    <div>
+                        <p class="section-label" data-i18n="calcLabel">CALCULATOR — BARAGA INYUNGU</p>
+                        <h2 class="calc-title" data-i18n="calcTitle">Baraga amafaranga ushobora gukorera kuri Chat</h2>
+                        <p class="calc-desc" data-i18n="calcDesc">Hitamo amasaha ushaka gukora buri munsi urene ibyo uzajya ukorera ku munsi, mu cyumweru no mu kwezi (2,500 RWF / isaha).</p>
+                        
+                        <div class="slider-group">
+                            <div class="slider-header">
+                                <span data-i18n="sliderHours">Amasaha ukora ku munsi:</span>
+                                <span class="slider-val" id="sliderValDisplay">4 Hours / day</span>
+                            </div>
+                            <input type="range" min="1" max="12" value="4" class="calc-slider" id="hoursSlider" />
+                        </div>
+
+                        <a target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-full" href="https://mulaearn.com/register.php?ref=Mami" data-i18n="calcCta">
+                            Tangira Guganira Nabo Now →
+                        </a>
+                    </div>
+
+                    <div class="calc-display">
+                        <p class="calc-display-label" data-i18n="calcDaily">Amafaranga ku Munsi</p>
+                        <div class="calc-display-amount" id="dailyAmountDisplay">10,000 RWF</div>
+                        
+                        <div class="calc-sub-grid">
+                            <div class="calc-sub-box">
+                                <p data-i18n="calcWeekly">Mu Cyumweru (7 days)</p>
+                                <p id="weeklyAmountDisplay">70,000 RWF</p>
+                            </div>
+                            <div class="calc-sub-box">
+                                <p data-i18n="calcMonthly">Mu Kwezi (30 days)</p>
+                                <p id="monthlyAmountDisplay">300,000 RWF</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Divider -->
+        <div class="section-divider"></div>
+
+        <!-- 4-Step Withdrawal Section -->
+        <section id="uko-bikorwa" class="steps-section">
+            <div class="container">
+                <div class="steps-header animate-on-scroll">
+                    <p class="section-label" data-i18n="stepsLabel">GAHUNDA YO KUBIKUZA BURI MUNSI</p>
+                    <h2 class="section-title" data-i18n="stepsTitle">Uko utangira no kubikuza kuri MoMo</h2>
+                    <p class="section-desc" data-i18n="stepsDesc">Gutangira usabwa 6,500 RWF yishyurwa rimwe gusa. Nyuma yaho ubikuza amafaranga yawe yose buri gihe ukunda.</p>
+                </div>
+
+                <div class="steps-grid">
+                    <div class="step-card animate-on-scroll">
+                        <div class="step-icon">01</div>
+                        <h3 class="step-title" data-i18n="step1Title">Iyandikishe</h3>
+                        <p class="step-desc" data-i18n="step1Desc">Fungura account yawe wishyura 6,500 FRW rimwe gusa muri system.</p>
+                    </div>
+
+                    <div class="step-card animate-on-scroll">
+                        <div class="step-icon">02</div>
+                        <h3 class="step-title" data-i18n="step2Title">Ganira & Kora Task</h3>
+                        <p class="step-desc" data-i18n="step2Desc">Ganira n'abanyamahanga (2,500 RWF/h), reba videos, cyangwa gukina games.</p>
+                    </div>
+
+                    <div class="step-card animate-on-scroll">
+                        <div class="step-icon">03</div>
+                        <h3 class="step-title" data-i18n="step3Title">Saba Kubikuza</h3>
+                        <p class="step-desc" data-i18n="step3Desc">Amafaranga yose wakoreye wemerewe kuyabikuza automatic igihe cyose ushakiye.</p>
+                    </div>
+
+                    <div class="step-card animate-on-scroll">
+                        <div class="step-icon">04</div>
+                        <h3 class="step-title" data-i18n="step4Title">Akugeraho MoMo</h3>
+                        <p class="step-desc" data-i18n="step4Desc">Bifata amasaha 2–4 amafaranga akakugeraho kuri MTN MoMo cyangwa Airtel Money.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Divider -->
+        <div class="section-divider"></div>
+
+        <!-- Earning Methods Grid Section -->
+        <section id="uburyo" class="earning-section">
+            <div class="container">
+                <div class="animate-on-scroll" style="text-align: center;">
+                    <p class="section-label" data-i18n="waysLabel">SERIVISI ZOSE ZAGUHA AMAFARANGA</p>
+                    <h2 class="section-title" data-i18n="waysTitle">Hitamo uburyo bwo gukorera amafaranga</h2>
+                    <p class="section-desc" style="margin: 14px auto 0;" data-i18n="waysDesc">Uretse guganira n'abanyamahanga, ushobora no kureba videos ya TikTok, YouTube, Instagram, n'ibindi kanda buto ya buri task utangire!</p>
+                </div>
+
+                <div class="earning-grid">
+                    <!-- Featured Main Card -->
+                    <div class="earning-card animate-on-scroll" style="grid-column: span 3; border-color: var(--accent); background: linear-gradient(135deg, #ffffff 0%, var(--bg-accent-soft) 100%);">
+                        <div>
+                            <div class="earning-card-header">
+                                <div class="step-icon" style="margin-bottom: 0; background: var(--accent-gradient); color: #fff;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                                    </svg>
+                                </div>
+                                <div class="earning-amount">
+                                    <div class="amount" style="font-size: 1.8rem;">2,500 RWF</div>
+                                    <div class="label" style="font-weight: 700; color: var(--accent);">Buri Saha (Foreign Chat)</div>
+                                </div>
+                            </div>
+                            <h3 style="font-size: 1.35rem; color: var(--text-primary);" data-i18n="wayMainTitle">💬 Ganira n'Abanyamahanga (Foreign Chat Companion)</h3>
+                            <p style="font-size: 1rem; color: var(--text-secondary);" data-i18n="wayMainDesc">Ganira n'abantu baturuka mu bihugu bitandukanye (USA, Canada, UK, France, UAE). Ukoresheje telefone yawe, uhembwa 2,500 RWF kuri buri saha yo guganira muri MTN MoMo cyangwa Airtel Money.</p>
+                        </div>
+                        <a target="_blank" rel="noopener noreferrer" class="btn btn-task-register" href="https://mulaearn.com/register.php?ref=Mami" data-i18n="taskBtn1">
+                            FUNGURA ACCOUNT UTANGIRE CHAT →
+                        </a>
+                    </div>
+
+                    <!-- TikTok Card -->
+                    <div class="earning-card animate-on-scroll">
+                        <div>
+                            <div class="earning-card-header">
+                                <div class="step-icon" style="margin-bottom: 0;">🎵</div>
+                                <div class="earning-amount">
+                                    <div class="amount">9,000 RWF</div>
+                                    <div class="label">Buri Munsi</div>
+                                </div>
+                            </div>
+                            <h3 data-i18n="wayTikTokTitle">Video za TikTok</h3>
+                            <p data-i18n="wayTikTokDesc">Uhabwa videos za TikTok 7 buri munsi zo kureba (isogonda 20 buri video). Video imwe = 350 FRW.</p>
+                        </div>
+                        <a target="_blank" rel="noopener noreferrer" class="btn btn-task-register" href="https://mulaearn.com/register.php?ref=Mami" data-i18n="taskBtn2">
+                            REBA TIKTOK VIDEOS →
+                        </a>
+                    </div>
+
+                    <!-- YouTube Card -->
+                    <div class="earning-card animate-on-scroll">
+                        <div>
+                            <div class="earning-card-header">
+                                <div class="step-icon" style="margin-bottom: 0;">▶️</div>
+                                <div class="earning-amount">
+                                    <div class="amount">7,500 RWF</div>
+                                    <div class="label">Buri Munsi</div>
+                                </div>
+                            </div>
+                            <h3 data-i18n="wayYTTitle">Video za YouTube</h3>
+                            <p data-i18n="wayYTDesc">Uhabwa videos za YouTube 7 buri munsi zo kureba (isogonda 20 buri video). Video imwe = 350 FRW.</p>
+                        </div>
+                        <a target="_blank" rel="noopener noreferrer" class="btn btn-task-register" href="https://mulaearn.com/register.php?ref=Mami" data-i18n="taskBtn3">
+                            REBA YOUTUBE VIDEOS →
+                        </a>
+                    </div>
+
+                    <!-- Instagram Card -->
+                    <div class="earning-card animate-on-scroll">
+                        <div>
+                            <div class="earning-card-header">
+                                <div class="step-icon" style="margin-bottom: 0;">📸</div>
+                                <div class="earning-amount">
+                                    <div class="amount">5,000 RWF</div>
+                                    <div class="label">Buri Munsi</div>
+                                </div>
+                            </div>
+                            <h3 data-i18n="wayIGTitle">Video za Instagram</h3>
+                            <p data-i18n="wayIGDesc">Uhabwa videos za Instagram 7 buri munsi zo kureba (isogonda 20 buri video). Video imwe = 350 FRW.</p>
+                        </div>
+                        <a target="_blank" rel="noopener noreferrer" class="btn btn-task-register" href="https://mulaearn.com/register.php?ref=Mami" data-i18n="taskBtn4">
+                            REBA INSTAGRAM VIDEOS →
+                        </a>
+                    </div>
+
+                    <!-- Games Card -->
+                    <div class="earning-card animate-on-scroll">
+                        <div>
+                            <div class="earning-card-header">
+                                <div class="step-icon" style="margin-bottom: 0;">🎮</div>
+                                <div class="earning-amount">
+                                    <div class="amount">Games</div>
+                                    <div class="label">Isoro & Dame</div>
+                                </div>
+                            </div>
+                            <h3 data-i18n="wayGamesTitle">Gukina Games – Isoro & Dame</h3>
+                            <p data-i18n="wayGamesDesc">Kina games zitandukanye ukoresheje telefone yawe: Isoro, Dame na game nyinshi watsinda ukahembwa.</p>
+                        </div>
+                        <a target="_blank" rel="noopener noreferrer" class="btn btn-task-register" href="https://mulaearn.com/register.php?ref=Mami" data-i18n="taskBtn5">
+                            KINA GAMES UHEMBWE →
+                        </a>
+                    </div>
+
+                    <!-- Welcome Bonus Card -->
+                    <div class="earning-card animate-on-scroll">
+                        <div>
+                            <div class="earning-card-header">
+                                <div class="step-icon" style="margin-bottom: 0;">🎁</div>
+                                <div class="earning-amount">
+                                    <div class="amount">3,900 RWF</div>
+                                    <div class="label">Instant Bonus</div>
+                                </div>
+                            </div>
+                            <h3 data-i18n="wayBonusTitle">Welcome Bonus Instant</h3>
+                            <p data-i18n="wayBonusDesc">Ukimara gukora account activation uhita uhabwa welcome bonus instant ya 3,900 RWF ushaka ugahita uyabikuza.</p>
+                        </div>
+                        <a target="_blank" rel="noopener noreferrer" class="btn btn-task-register" href="https://mulaearn.com/register.php?ref=Mami" data-i18n="taskBtn6">
+                            AKIRA BONUS YAWE →
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Divider -->
+        <div class="section-divider"></div>
+
+        <!-- Loans Section -->
+        <section id="inguzanyo" class="loan-section">
+            <div class="container loan-grid">
+                <div class="loan-image animate-on-scroll">
+                    <img src="tech-equipment.png" alt="Tech Equipment Loans Global Earn" width="640" height="520" />
+                </div>
+                <div class="animate-on-scroll">
+                    <p class="section-label" data-i18n="loanLabel">INGUZANYO</p>
+                    <h2 class="section-title" data-i18n="loanTitle">Guza amafaranga nta ngwate usabwa</h2>
+                    <p class="section-desc" data-i18n="loanDesc">Umuntu wese wamaze kugira active account muri Global Earn aba yemerewe kuguza amafaranga ari hagati ya 21,000 RWF na 2,000,000 RWF nta ngwate asabwa, kandi akazayishyura mu gihe cy'imyaka itatu n'igice.</p>
+                    
+                    <div class="loan-features">
+                        <div class="loan-feature">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                            </svg>
+                            <span data-i18n="loanFeat1">Inguzanyo iri hagati ya 21,000 RWF na 2,000,000 RWF</span>
+                        </div>
+                        <div class="loan-feature">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                            </svg>
+                            <span data-i18n="loanFeat2">Nta ngwate usabwa (no collateral)</span>
+                        </div>
+                        <div class="loan-feature">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                            </svg>
+                            <span data-i18n="loanFeat3">Uyishyura mu gihe cy'imyaka itatu n'igice</span>
+                        </div>
+                        <div class="loan-feature">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                            </svg>
+                            <span data-i18n="loanFeat4">Ihabwa umuntu wese wamaze kugira active account muri Global Earn</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Divider -->
+        <div class="section-divider"></div>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-card animate-on-scroll">
+                    <div class="cta-content">
+                        <h2 class="cta-title" data-i18n="ctaTitle">Tangira uyu munsi — Igiciro kimwe gusa (6,500 RWF)</h2>
+                        <p class="cta-desc" data-i18n="ctaDesc">Kwishyura 6,500 FRW rimwe kuguha 3,900 FRW Welcome Bonus instant, n'uburenganzira bwo gukorera online no guganira n'abanyamahanga igihe cyose!</p>
+                        
+                        <div class="cta-checklist">
+                            <div>✔ Email ikora neza</div>
+                            <div>✔ Nimero ya MTN cyangwa Airtel (Rwanda)</div>
+                            <div>✔ Username & Password yizewe</div>
+                        </div>
+                    </div>
+
+                    <div class="cta-form">
+                        <p data-i18n="ctaBoxText">Kanda buto ikurikira maze wiyandikishe. Fungura account yawe ukore activation ya 6,500 RWF uhite utangira guganira n'abanyamahanga!</p>
+                        <a target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-full" href="https://mulaearn.com/register.php?ref=Mami">
+                            <span data-i18n="ctaBtn">FUNGURA ACCOUNT YAWE →</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="arrow-icon">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </a>
+                        <p class="cta-note" data-i18n="ctaNote">MTN MoMo & Airtel Money — Automatic payout mu masaha 2–4.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 24px;">
+                <div>
+                    <div class="footer-brand">
+                        <span class="logo-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                    </svg>
+                        </span>
+                        <span class="logo-text">Global Earn</span>
+                    </div>
+                    <p class="footer-desc" data-i18n="footerDesc">Global Earn ni urubuga rwa mbere rugufasha guganira n'abanyamahanga ukorera amafaranga n'izindi serivisi online.</p>
+                </div>
+                <div>
+                    <a target="_blank" rel="noopener noreferrer" class="btn" style="background: #25d366; color: #fff; padding: 12px 24px; border-radius: var(--radius-full); font-weight: 700;" href="https://wa.me/250732580014?text=Bite%20Global%20Earn%2C%20nshaka%20gufashwa%20gukora%20account">
+                        💬 WhatsApp: 0732580014
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Global Earn. <span data-i18n="footerRights">Uburenganzira bwose burafitwe.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Support Button -->
+    <a target="_blank" rel="noopener noreferrer" href="https://wa.me/250732580014?text=Bite%20Global%20Earn%2C%20nshaka%20gufashwa%20gukora%20account" class="whatsapp-float" aria-label="Support WhatsApp 0732580014">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-1.144 4.178 4.287-1.123z"/>
+        </svg>
+        <span>WhatsApp 0732580014</span>
+    </a>
+
+    <!-- Multilingual Translations & Interactivity JS -->
+    <script>
+        const translations = {
+            rw: {
+                docTitle: "Global Earn — Ganira n'abanyamahanga uhembwe ku isaha kuri MoMo",
+                docDesc: "Global Earn ni urubuga rwa mbere ruguha 3,900 FRW Welcome Bonus ukimara kwiyandikisha, n'amahirwe yo guganira n'abanyamahanga ukahembwa 2,500 FRW buri saha kuri MoMo.",
+                navCalc: "Baraga Inyungu",
+                navHow: "Uko bikorwa",
+                navWays: "Serivisi Zose",
+                navLoans: "Inguzanyo",
+                navRegister: "IYANDIKISHE",
+                heroTitle: "Ganira n'abanyamahanga uhembwe 2,500 FRW buri saha kuri MoMo",
+                heroDesc: "Global Earn niko urubuga rwa mbere ruguha 3,900 FRW Welcome Bonus instant ukimara gukora account, n'amahirwe yo guganira n'abantu baturuka mu bihugu bitandukanye (USA, Canada, UK, France, UAE) ukajya uhembwa 2,500 FRW buri saha kuri MTN MoMo cyangwa Airtel Money!",
+                heroCta: "TANGIRA GUGANIRA NONE →",
+                heroLearnMore: "Baraga Inyungu Zayo",
+                statPerHour: "Buri saha yo Chat",
+                statWelcome: "Welcome bonus",
+                statPayout: "MoMo Payout",
+                floatMainGoal: "Foreign Chat Companion",
+                floatSubGoal: "Uhembwa 2,500 RWF buri saha",
+                liveLabel: "ABANYAMAHANGA BATEGEREJE GUGANIRA NAWE",
+                liveTitle: "Abakiriya bari online ubu (Live Active Companions)",
+                calcLabel: "CALCULATOR — BARAGA INYUNGU",
+                calcTitle: "Baraga amafaranga ushobora gukorera kuri Chat",
+                calcDesc: "Hitamo amasaha ushaka gukora buri munsi urene ibyo uzajya ukorera ku munsi, mu cyumweru no mu kwezi (2,500 RWF / isaha).",
+                sliderHours: "Amasaha ukora ku munsi:",
+                calcCta: "Tangira Guganira Nabo Now →",
+                calcDaily: "Amafaranga ku Munsi",
+                calcWeekly: "Mu Cyumweru (7 days)",
+                calcMonthly: "Mu Kwezi (30 days)",
+                stepsLabel: "GAHUNDA YO KUBIKUZA BURI MUNSI",
+                stepsTitle: "Uko utangira no kubikuza kuri MoMo",
+                stepsDesc: "Gutangira usabwa 6,500 RWF yishyurwa rimwe gusa. Nyuma yaho ubikuza amafaranga yawe yose buri gihe ukunda.",
+                step1Title: "Iyandikishe",
+                step1Desc: "Fungura account yawe wishyura 6,500 FRW rimwe gusa muri system.",
+                step2Title: "Ganira & Kora Task",
+                step2Desc: "Ganira n'abanyamahanga (2,500 RWF/h), reba videos, cyangwa gukina games.",
+                step3Title: "Saba Kubikuza",
+                step3Desc: "Amafaranga yose wakoreye wemerewe kuyabikuza automatic igihe cyose ushakiye.",
+                step4Title: "Akugeraho MoMo",
+                step4Desc: "Bifata amasaha 2–4 amafaranga akakugeraho kuri MTN MoMo cyangwa Airtel Money.",
+                waysLabel: "SERIVISI ZOSE ZAGUHA AMAFARANGA",
+                waysTitle: "Hitamo uburyo bwo gukorera amafaranga",
+                waysDesc: "Uretse guganira n'abanyamahanga, ushobora no kureba videos ya TikTok, YouTube, Instagram, n'ibindi kanda buto ya buri task utangire!",
+                wayMainTitle: "💬 Ganira n'Abanyamahanga (Foreign Chat Companion)",
+                wayMainDesc: "Ganira n'abantu baturuka mu bihugu bitandukanye (USA, Canada, UK, France, UAE). Ukoresheje telefone yawe, uhembwa 2,500 RWF kuri buri saha yo guganira muri MTN MoMo cyangwa Airtel Money.",
+                wayTikTokTitle: "Video za TikTok",
+                wayTikTokDesc: "Uhabwa videos za TikTok 7 buri munsi zo kureba (isogonda 20 buri video). Video imwe = 350 FRW.",
+                wayYTTitle: "Video za YouTube",
+                wayYTDesc: "Uhabwa videos za YouTube 7 buri munsi zo kureba (isogonda 20 buri video). Video imwe = 350 FRW.",
+                wayIGTitle: "Video za Instagram",
+                wayIGDesc: "Uhabwa videos za Instagram 7 buri munsi zo kureba (isogonda 20 buri video). Video imwe = 350 FRW.",
+                wayGamesTitle: "Gukina Games – Isoro & Dame",
+                wayGamesDesc: "Kina games zitandukanye ukoresheje telefone yawe: Isoro, Dame na game nyinshi watsinda ukahembwa.",
+                wayBonusTitle: "Welcome Bonus Instant",
+                wayBonusDesc: "Ukimara gukora account activation uhita uhabwa welcome bonus instant ya 3,900 RWF ushaka ugahita uyabikuza.",
+                taskBtn1: "FUNGURA ACCOUNT UTANGIRE CHAT →",
+                taskBtn2: "REBA TIKTOK VIDEOS →",
+                taskBtn3: "REBA YOUTUBE VIDEOS →",
+                taskBtn4: "REBA INSTAGRAM VIDEOS →",
+                taskBtn5: "KINA GAMES UHEMBWE →",
+                taskBtn6: "AKIRA BONUS YAWE →",
+                loanLabel: "INGUZANYO",
+                loanTitle: "Guza amafaranga nta ngwate usabwa",
+                loanDesc: "Umuntu wese wamaze kugira active account muri Global Earn aba yemerewe kuguza amafaranga ari hagati ya 21,000 RWF na 2,000,000 RWF nta ngwate asabwa, kandi akazayishyura mu gihe cy'imyaka itatu n'igice.",
+                loanFeat1: "Inguzanyo iri hagati ya 21,000 RWF na 2,000,000 RWF",
+                loanFeat2: "Nta ngwate usabwa (no collateral)",
+                loanFeat3: "Uyishyura mu gihe cy'imyaka itatu n'igice",
+                loanFeat4: "Ihabwa umuntu wese wamaze kugira active account muri Global Earn",
+                ctaTitle: "Tangira uyu munsi — Igiciro kimwe gusa (6,500 RWF)",
+                ctaDesc: "Kwishyura 6,500 FRW rimwe kuguha 3,900 FRW Welcome Bonus instant, n'uburenganzira bwo gukorera online no guganira n'abanyamahanga igihe cyose!",
+                ctaBoxText: "Kanda buto ikurikira maze wiyandikishe. Fungura account yawe ukore activation ya 6,500 RWF uhite utangira guganira n'abanyamahanga!",
+                ctaBtn: "FUNGURA ACCOUNT YAWE →",
+                ctaNote: "MTN MoMo & Airtel Money — Automatic payout mu masaha 2–4.",
+                footerDesc: "Global Earn ni urubuga rwa mbere rugufasha guganira n'abanyamahanga ukorera amafaranga n'izindi serivisi online.",
+                footerRights: "Uburenganzira bwose burafitwe."
+            },
+            en: {
+                docTitle: "Global Earn — Chat with foreigners and get paid hourly on MoMo",
+                docDesc: "Global Earn is the #1 platform giving you 3,900 FRW Instant Welcome Bonus and paid chat sessions with foreigners at 2,500 FRW/hour directly to MoMo.",
+                navCalc: "Calculate Earnings",
+                navHow: "How It Works",
+                navWays: "All Services",
+                navLoans: "Loans",
+                navRegister: "REGISTER NOW",
+                heroTitle: "Chat with foreigners & get paid 2,500 FRW hourly on MoMo",
+                heroDesc: "Global Earn is the leading platform offering an instant 3,900 FRW Welcome Bonus and the opportunity to chat with people from USA, Canada, UK, France, and UAE while earning 2,500 FRW per hour directly to MTN MoMo or Airtel Money!",
+                heroCta: "START CHATTING NOW →",
+                heroLearnMore: "Calculate Your Income",
+                statPerHour: "Per Hour Chat",
+                statWelcome: "Welcome bonus",
+                statPayout: "MoMo Payout",
+                floatMainGoal: "Foreign Chat Companion",
+                floatSubGoal: "Paid 2,500 RWF hourly",
+                liveLabel: "FOREIGNERS WAITING TO CHAT WITH YOU",
+                liveTitle: "Clients currently online (Live Active Companions)",
+                calcLabel: "INCOME CALCULATOR",
+                calcTitle: "Calculate your potential chat income",
+                calcDesc: "Select how many hours you want to work daily to see your daily, weekly, and monthly chat income (2,500 RWF / hour).",
+                sliderHours: "Hours worked per day:",
+                calcCta: "Start Chatting Now →",
+                calcDaily: "Daily Income",
+                calcWeekly: "Weekly (7 days)",
+                calcMonthly: "Monthly (30 days)",
+                stepsLabel: "DAILY WITHDRAWAL TIMELINE",
+                stepsTitle: "How to start and withdraw to MoMo",
+                stepsDesc: "One-time registration fee of 6,500 RWF. After activation, withdraw your full earnings anytime.",
+                step1Title: "Register Account",
+                step1Desc: "Sign up and activate your account with a one-time 6,500 RWF fee.",
+                step2Title: "Chat & Do Tasks",
+                step2Desc: "Chat with foreigners (2,500 RWF/h), watch videos, or play games.",
+                step3Title: "Request Payout",
+                step3Desc: "All your earnings are eligible for instant automatic withdrawal whenever you want.",
+                step4Title: "Receive on MoMo",
+                step4Desc: "Takes 2–4 hours for money to arrive directly on your MTN MoMo or Airtel Money.",
+                waysLabel: "ALL EARNING OPPORTUNITIES",
+                waysTitle: "Choose your preferred earning methods",
+                waysDesc: "In addition to chatting with foreigners, watch TikTok, YouTube, Instagram videos, or play board games!",
+                wayMainTitle: "💬 Chat with Foreigners (Foreign Chat Companion)",
+                wayMainDesc: "Connect with people from USA, Canada, UK, France, and UAE using your smartphone. Get paid 2,500 RWF per hour directly to MTN MoMo or Airtel Money.",
+                wayTikTokTitle: "TikTok Videos",
+                wayTikTokDesc: "Get 7 TikTok videos daily to watch (20 seconds each). 1 Video = 350 FRW.",
+                wayYTTitle: "YouTube Videos",
+                wayYTDesc: "Get 7 YouTube videos daily to watch (20 seconds each). 1 Video = 350 FRW.",
+                wayIGTitle: "Instagram Videos",
+                wayIGDesc: "Get 7 Instagram videos daily to watch (20 seconds each). 1 Video = 350 FRW.",
+                wayGamesTitle: "Play Games – Board & Strategy",
+                wayGamesDesc: "Play popular mobile games like Isoro and Checkers to win cash rewards.",
+                wayBonusTitle: "Instant Welcome Bonus",
+                wayBonusDesc: "Get an instant 3,900 RWF welcome bonus right after account activation.",
+                taskBtn1: "START CHATTING NOW →",
+                taskBtn2: "WATCH TIKTOK VIDEOS →",
+                taskBtn3: "WATCH YOUTUBE VIDEOS →",
+                taskBtn4: "WATCH INSTAGRAM VIDEOS →",
+                taskBtn5: "PLAY GAMES & EARN →",
+                taskBtn6: "CLAIM YOUR BONUS →",
+                loanLabel: "INSTANT LOANS",
+                loanTitle: "Get a loan without collateral",
+                loanDesc: "Anyone with an active Global Earn account is eligible to request an instant loan ranging between 21,000 RWF and 2,000,000 RWF with no collateral required, repayable over 3.5 years.",
+                loanFeat1: "Loan range between 21,000 RWF and 2,000,000 RWF",
+                loanFeat2: "No collateral required",
+                loanFeat3: "Repayable flexible period of up to 3.5 years",
+                loanFeat4: "Available to anyone with an active Global Earn account",
+                ctaTitle: "Start today — One-time fee (6,500 RWF)",
+                ctaDesc: "A single 6,500 RWF activation unlocks your 3,900 RWF instant Welcome Bonus and unlimited access to foreign chat companion work!",
+                ctaBoxText: "Click the button below to register. Activate your account with 6,500 RWF and start chatting with foreigners right away!",
+                ctaBtn: "CREATE YOUR ACCOUNT →",
+                ctaNote: "MTN MoMo & Airtel Money — Automatic payout within 2–4 hours.",
+                footerDesc: "Global Earn is the premier platform connecting you with foreign chat companions and online micro-tasks.",
+                footerRights: "All rights reserved."
+            },
+            fr: {
+                docTitle: "Global Earn — Discutez avec des étrangers et soyez payé par heure sur MoMo",
+                docDesc: "Global Earn est la 1ère plateforme vous offrant 3 900 FRW de Bonus de bienvenue et des sessions de chat à 2 500 FRW/heure sur MoMo.",
+                navCalc: "Calculer les gains",
+                navHow: "Comment ça marche",
+                navWays: "Tous les services",
+                navLoans: "Prêts",
+                navRegister: "S'INSCRIRE",
+                heroTitle: "Discutez avec des étrangers & gagnez 2 500 FRW par heure sur MoMo",
+                heroDesc: "Global Earn est la plateforme leader offrant 3 900 FRW de bonus de bienvenue instantané et la possibilité de discuter avec des résidents des USA, Canada, UK, France et Émirats Arabes Unis à 2 500 FRW par heure sur MTN MoMo ou Airtel Money!",
+                heroCta: "COMMENCER À DISCUTER →",
+                heroLearnMore: "Calculer mes revenus",
+                statPerHour: "Par heure de Chat",
+                statWelcome: "Bonus de bienvenue",
+                statPayout: "Paiement MoMo",
+                floatMainGoal: "Foreign Chat Companion",
+                floatSubGoal: "Payé 2 500 RWF par heure",
+                liveLabel: "ÉTRANGERS EN ATTENTE DE DISCUTER AVEC VOUS",
+                liveTitle: "Clients actuellement en ligne (Live Active Companions)",
+                calcLabel: "CALCULATEUR DE REVENUS",
+                calcTitle: "Calculez vos revenus potentiels de Chat",
+                calcDesc: "Choisissez le nombre d'heures par jour pour estimer vos gains quotidiens, hebdomadaires et mensuels (2 500 RWF / heure).",
+                sliderHours: "Heures travaillées par jour:",
+                calcCta: "Commencer à discuter →",
+                calcDaily: "Revenu quotidien",
+                calcWeekly: "Semaine (7 jours)",
+                calcMonthly: "Mois (30 jours)",
+                stepsLabel: "PAGEMENT ET RETRAIT QUOTIDIEN",
+                stepsTitle: "Comment débuter et retirer sur MoMo",
+                stepsDesc: "Frais uniques d'activation de 6 500 RWF. Retirez tous vos gains à tout moment.",
+                step1Title: "Inscrivez-vous",
+                step1Desc: "Activez votre compte avec un paiement unique de 6 500 RWF dans le système.",
+                step2Title: "Discutez & Tâches",
+                step2Desc: "Discutez avec des étrangers (2 500 RWF/h) ou regardez des vidéos.",
+                step3Title: "Demandez le retrait",
+                step3Desc: "Tous vos gains sont éligibles au retrait automatique immédiat.",
+                step4Title: "Recevez sur MoMo",
+                step4Desc: "Délai de 2 à 4 heures pour recevoir vos fonds sur MTN MoMo ou Airtel Money.",
+                waysLabel: "TOUTES LES OPPORTUNITÉS DE GAINS",
+                waysTitle: "Choisissez vos méthodes de gains préférées",
+                waysDesc: "En plus du chat avec les étrangers, regardez des vidéos TikTok, YouTube, Instagram ou jouez aux jeux!",
+                wayMainTitle: "💬 Discutez avec des Étrangers (Foreign Chat Companion)",
+                wayMainDesc: "Échangez avec des clients des USA, Canada, UK, France et UAE depuis votre smartphone. Payé 2 500 RWF par heure directement sur MoMo.",
+                wayTikTokTitle: "Vidéos TikTok",
+                wayTikTokDesc: "Recevez 7 vidéos TikTok par jour à visionner (20 secondes chacune). 1 Vidéo = 350 FRW.",
+                wayYTTitle: "Vidéos YouTube",
+                wayYTDesc: "Recevez 7 vidéos YouTube par jour à visionner (20 secondes chacune). 1 Vidéo = 350 FRW.",
+                wayIGTitle: "Vidéos Instagram",
+                wayIGDesc: "Recevez 7 vidéos Instagram par jour à visionner (20 secondes chacune). 1 Vidéo = 350 FRW.",
+                wayGamesTitle: "Jeux Mobile & Stratégie",
+                wayGamesDesc: "Jouez aux jeux populaires comme Isoro et Dames pour remporter des prix en argent.",
+                wayBonusTitle: "Bonus de Bienvenue Instantané",
+                wayBonusDesc: "Obtenez 3 900 RWF de bonus instantané dès l'activation de votre compte.",
+                taskBtn1: "COMMENCER LE CHAT →",
+                taskBtn2: "REGARDER TIKTOK VIDEOS →",
+                taskBtn3: "REGARDER YOUTUBE VIDEOS →",
+                taskBtn4: "REGARDER INSTAGRAM VIDEOS →",
+                taskBtn5: "JOUER ET GAGNER →",
+                taskBtn6: "RÉCLAMER MON BONUS →",
+                loanLabel: "PRÊTS SANS GARANTIE",
+                loanTitle: "Obtenez un prêt sans caution",
+                loanDesc: "Toute personne disposant d'un compte actif sur Global Earn est éligible pour demander un prêt allant de 21 000 RWF à 2 000 000 RWF sans aucune garantie requise, remboursable sur 3,5 ans.",
+                loanFeat1: "Montant du prêt entre 21 000 RWF et 2 000 000 RWF",
+                loanFeat2: "Aucune garantie ou caution exigée",
+                loanFeat3: "Remboursement flexible jusqu'à 3,5 ans",
+                loanFeat4: "Accessible à tous les membres actifs de Global Earn",
+                ctaTitle: "Commencez aujourd'hui — Frais uniques (6 500 RWF)",
+                ctaDesc: "L'activation de 6 500 RWF vous débloque 3 900 RWF de bonus immédiat et un accès illimité au chat rémunéré!",
+                ctaBoxText: "Cliquez ci-dessous pour créer votre compte et commencer à discuter avec des étrangers!",
+                ctaBtn: "CRÉER MON COMPTE →",
+                ctaNote: "MTN MoMo & Airtel Money — Paiement automatique sous 2 à 4 heures.",
+                footerDesc: "Global Earn est la plateforme n°1 connectant les utilisateurs avec des clients étrangers pour du chat rémunéré.",
+                footerRights: "Tous droits réservés."
+            }
+        };
+
+        const langBtn = document.getElementById('langBtn');
+        const langDropdown = document.getElementById('langDropdown');
+        const currentLangLabel = document.getElementById('currentLangLabel');
+        const mobileToggle = document.getElementById('mobileToggle');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        let currentLang = 'rw';
+
+        function setLanguage(lang) {
+            currentLang = lang;
+            const dict = translations[lang] || translations.rw;
+
+            document.querySelectorAll('[data-i18n]').forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                if (dict[key]) {
+                    el.textContent = dict[key];
+                }
+            });
+
+            document.querySelectorAll('[data-i18n-meta]').forEach(el => {
+                const key = el.getAttribute('data-i18n-meta');
+                if (dict[key]) {
+                    el.setAttribute('content', dict[key]);
+                }
+            });
+
+            const labels = { rw: 'Kinyarwanda', en: 'English', fr: 'Français' };
+            if (currentLangLabel) currentLangLabel.textContent = labels[lang] || 'Kinyarwanda';
+            document.documentElement.lang = lang;
+
+            document.querySelectorAll('.lang-option').forEach(btn => {
+                btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
+            });
+
+            localStorage.setItem('global_earn_lang', lang);
+        }
+
+        // Language Dropdown toggle
+        if (langBtn && langDropdown) {
+            langBtn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                const isOpen = langDropdown.classList.contains('open');
+                langDropdown.classList.toggle('open', !isOpen);
+                langBtn.setAttribute('aria-expanded', !isOpen);
+            });
+
+            document.addEventListener('click', () => {
+                langDropdown.classList.remove('open');
+                langBtn.setAttribute('aria-expanded', 'false');
+            });
+        }
+
+        // Language selection
+        document.querySelectorAll('.lang-option').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const lang = btn.getAttribute('data-lang');
+                setLanguage(lang);
+                if (langDropdown) langDropdown.classList.remove('open');
+                if (mobileMenu) mobileMenu.classList.remove('open');
+            });
+        });
+
+        // Mobile menu toggle logic
+        if (mobileToggle && mobileMenu) {
+            mobileToggle.addEventListener('click', (e) => {
+                e.stopPropagation();
+                e.preventDefault();
+                mobileMenu.classList.toggle('open');
+            });
+
+            document.addEventListener('click', (e) => {
+                if (!mobileMenu.contains(e.target) && !mobileToggle.contains(e.target)) {
+                    mobileMenu.classList.remove('open');
+                }
+            });
+
+            document.querySelectorAll('.mobile-link').forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.remove('open');
+                });
+            });
+        }
+
+        // Smooth Scroll for Navigation Anchors
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const targetId = this.getAttribute('href');
+                if (targetId && targetId !== '#') {
+                    const targetEl = document.querySelector(targetId);
+                    if (targetEl) {
+                        e.preventDefault();
+                        targetEl.scrollIntoView({ behavior: 'smooth' });
+                    }
+                }
+            });
+        });
+
+        // Interactive Income Calculator Logic
+        const hoursSlider = document.getElementById('hoursSlider');
+        const sliderValDisplay = document.getElementById('sliderValDisplay');
+        const dailyAmountDisplay = document.getElementById('dailyAmountDisplay');
+        const weeklyAmountDisplay = document.getElementById('weeklyAmountDisplay');
+        const monthlyAmountDisplay = document.getElementById('monthlyAmountDisplay');
+
+        function updateCalculator() {
+            if (!hoursSlider) return;
+            const hours = parseInt(hoursSlider.value);
+            const rate = 2500; // 2,500 RWF per hour
+            const daily = hours * rate;
+            const weekly = daily * 7;
+            const monthly = daily * 30;
+
+            if (sliderValDisplay) sliderValDisplay.textContent = hours + ' Hours / day';
+            if (dailyAmountDisplay) dailyAmountDisplay.textContent = daily.toLocaleString() + ' RWF';
+            if (weeklyAmountDisplay) weeklyAmountDisplay.textContent = weekly.toLocaleString() + ' RWF';
+            if (monthlyAmountDisplay) monthlyAmountDisplay.textContent = monthly.toLocaleString() + ' RWF';
+        }
+
+        if (hoursSlider) {
+            hoursSlider.addEventListener('input', updateCalculator);
+            updateCalculator();
+        }
+
+        // Intersection Observer for Animations
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.animate-on-scroll').forEach(el => observer.observe(el));
+
+        // Saved Language initialization
+        const savedLang = localStorage.getItem('global_earn_lang');
+        if (savedLang && translations[savedLang]) {
+            setLanguage(savedLang);
+        }
+    </script>
+</body>
+
+</html>
